@@ -41,8 +41,9 @@ Github 下载地址: https://github.com/shabbywu/Battle-Brothers-CN/releases/dow
 ![字体位置](字体位置.png)
 6. 切换页面至「启动器」，点击「启动游戏」开始游玩
 ![启动器](启动器.png)
-1. 定期更新翻译文本, 自动更新至最新的翻译进度
+7. 定期更新翻译文本, 自动更新至最新的翻译进度
 ![更新翻译文本](更新翻译文本.png)
+> 「更新翻译文本」后需要重新「执行翻译」才会生效
 
 # 加入我们
 战场兄弟中文本地化在线协同项目地址: https://paratranz.cn/projects/7032
