@@ -151,12 +151,11 @@
 
 <!-- random header image-->
 <script>
-
   let headerImages = <%- JSON.stringify(config["header-imgs"]) %>;
 </script>
 <% if(config['jsdelivr']) { %>
   <script>
-    let root = <%- JSON.stringify(config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root) %>;
+    let root = <%- JSON.stringify(config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username + '.github.io@' + config.jsdelivr.branch + config.root ) %>;
   </script>
 <% } else  { %>
   <script>
@@ -164,7 +163,6 @@
   </script>
 <% } %>
 <script>
-  let root = <%- JSON.stringify(config.root) %>;
   var randomIndex = Math.floor(Math.random() * headerImages.length);
   var headerImageUrl = root + headerImages[randomIndex];
 

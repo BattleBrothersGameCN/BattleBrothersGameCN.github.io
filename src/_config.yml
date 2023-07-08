@@ -21,7 +21,7 @@ langselect:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite-url      # Note: don't forget to modify the CNAME file to your url
+url: http://battle-brothers-cn.shabbywu.cn     # Note: don't forget to modify the CNAME file to your url
 root: /
 permalink: :lang/:title/
 permalink_defaults:
@@ -164,7 +164,7 @@ gitalk:
 ga_track_id: G-SW73JEDTNL   # Format: UA-xxxxxx-xx
 
 ## Baidu Analytics
-ba_track_id: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# ba_track_id: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Sitemap
 sitemap:
