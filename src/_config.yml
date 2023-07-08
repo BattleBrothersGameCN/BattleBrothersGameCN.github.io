@@ -394,4 +394,4 @@ gitter:
 deploy:
   type: git
   repo: https://github.com/BattleBrothersGameCN/BattleBrothersGameCN.github.io
-  branch: main
+  branch: deploy
