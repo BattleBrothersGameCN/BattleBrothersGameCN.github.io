@@ -5,25 +5,25 @@
   <style type="text/css" id="header-background-style">
     .body--light {
       /* intro-header */
-      --intro-header-background-image-url-home: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io<%= config.root + config["header-img"] %>');
-      --intro-header-background-image-url-post: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io<%= page["header-img"] %>');
-      --intro-header-background-image-url-page: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io<%= config.root %><%= page["header-img"] || config["archives-img"] %>');
+      --intro-header-background-image-url-home: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io@<%= config.jsdelivr.branch %><%= config.root + config["header-img"] %>');
+      --intro-header-background-image-url-post: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io@<%= config.jsdelivr.branch %><%= page["header-img"] %>');
+      --intro-header-background-image-url-page: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io@<%= config.jsdelivr.branch %><%= config.root %><%= page["header-img"] || config["archives-img"] %>');
     }
     .body--dark {
-      --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io<%= config.root + config["header-img"] %>');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io<%= page["header-img"] %>');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io<%= config.root %><%= page["header-img"] || config["archives-img"] %>');
+      --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io@<%= config.jsdelivr.branch %><%= config.root + config["header-img"] %>');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io@<%= config.jsdelivr.branch %><%= page["header-img"] %>');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io@<%= config.jsdelivr.branch %><%= config.root %><%= page["header-img"] || config["archives-img"] %>');
     }
     header.intro-header {
       <% if (is_home()) { %> /*config*/
         background-image: var(--intro-header-background-image-url-home);
-        /* background-image: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io<%= config.root + config["header-img"] %>'); */
+        /* background-image: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io@<%= config.jsdelivr.branch %><%= config.root + config["header-img"] %>'); */
       <% } else if (is_post()) { %> /*post*/
         background-image: var(--intro-header-background-image-url-post);
-        /* background-image: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io<%= page["header-img"] %>'); */
+        /* background-image: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io@<%= config.jsdelivr.branch %><%= page["header-img"] %>'); */
       <% } else { %> /*page*/
         background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io<%= config.root %><%= page["header-img"] || config["archives-img"] %>'); */
+        /* background-image: url('<%= config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root + config.jsdelivr.github_username %>.github.io@<%= config.jsdelivr.branch %><%= config.root %><%= page["header-img"] || config["archives-img"] %>'); */
       <% } %>
     }
 
@@ -150,11 +150,21 @@
 
 
 <!-- random header image-->
+<script>
+
+  let headerImages = <%- JSON.stringify(config["header-imgs"]) %>;
+</script>
 <% if(config['jsdelivr']) { %>
+  <script>
+    let root = <%- JSON.stringify(config.jsdelivr.jsdelivr_url + config.jsdelivr.github_username + config.root) %>;
+  </script>
 <% } else  { %>
+  <script>
+    let root = <%- JSON.stringify(config.root) %>;
+  </script>
+<% } %>
 <script>
   let root = <%- JSON.stringify(config.root) %>;
-  let headerImages = <%- JSON.stringify(config["header-imgs"]) %>;
   var randomIndex = Math.floor(Math.random() * headerImages.length);
   var headerImageUrl = root + headerImages[randomIndex];
 
@@ -173,5 +183,4 @@
     --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),url('${headerImageUrl}');
   }`, sheet.rules.length)
 </script>
-<% } %>
 <!-- random header image-->

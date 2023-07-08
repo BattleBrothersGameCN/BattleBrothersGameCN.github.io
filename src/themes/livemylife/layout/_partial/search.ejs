@@ -24,7 +24,7 @@
 
 <% if (config['search']) { %>
   <% if(config['jsdelivr']) { %>
-    <script src="<%- config.jsdelivr.jsdelivr_url %><%- config.jsdelivr.github_username %>/<%- config.jsdelivr.github_username %>.github.io/js/ziploader.js"></script>
+    <script src="<%- config.jsdelivr.jsdelivr_url %><%- config.jsdelivr.github_username %>/<%- config.jsdelivr.github_username %>.github.io@<%= config.jsdelivr.branch %>/js/ziploader.js"></script>
   <% } else { %>
     <script src="<%- config.root %>js/ziploader.js"></script>
   <% } %>
@@ -116,7 +116,7 @@
             var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
             var imgUrl = data.header_img;
             <% if(config['jsdelivr']) { %>
-              imgUrl = '<%- config.jsdelivr.jsdelivr_url %><%- config.jsdelivr.github_username %>/<%- config.jsdelivr.github_username %>.github.io' + imgUrl;
+              imgUrl = '<%- config.jsdelivr.jsdelivr_url %><%- config.jsdelivr.github_username %>/<%- config.jsdelivr.github_username %>.github.io@<%= config.jsdelivr.branch %>' + imgUrl;
             <% } %>
 
 
