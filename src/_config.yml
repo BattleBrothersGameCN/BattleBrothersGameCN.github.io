@@ -43,20 +43,20 @@ SEOTitle: 战场兄弟(Battle Brothers)汉化发布
 email: shabbywu@qq.com
 description: "战场兄弟(Battle Brothers)汉化发布"
 keyword: "Battle Brothers,战场兄弟,battle brothers,汉化,补丁,中文"
-header-img: img/header_img/loading_screen_08.jpg
+header-img: img/header_img/loading_screen_08.jpeg
 header-imgs:
-- img/header_img/loading_screen_01.jpg
-- img/header_img/loading_screen_02.jpg
-- img/header_img/loading_screen_03.jpg
-- img/header_img/loading_screen_04.jpg
-- img/header_img/loading_screen_05.jpg
-- img/header_img/loading_screen_06.jpg
-- img/header_img/loading_screen_07.jpg
-- img/header_img/loading_screen_08.jpg
-- img/header_img/loading_screen_09.jpg
-- img/header_img/loading_screen_10.jpg
-- img/header_img/loading_screen_11.jpg
-archives-img: img/header_img/loading_screen_04.jpg
+- img/header_img/loading_screen_01.jpeg
+- img/header_img/loading_screen_02.jpeg
+- img/header_img/loading_screen_03.jpeg
+- img/header_img/loading_screen_04.jpeg
+- img/header_img/loading_screen_05.jpeg
+- img/header_img/loading_screen_06.jpeg
+- img/header_img/loading_screen_07.jpeg
+- img/header_img/loading_screen_08.jpeg
+- img/header_img/loading_screen_09.jpeg
+- img/header_img/loading_screen_10.jpeg
+- img/header_img/loading_screen_11.jpeg
+archives-img: img/header_img/loading_screen_04.jpeg
 
 
 # Favicon settings
