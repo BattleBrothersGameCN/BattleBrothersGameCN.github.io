@@ -128,11 +128,11 @@ friends: [
 ## Doc:https://github.com/gitalk/gitalk/blob/master/readme-cn.md
 ##
 gitalk:
-  owner:                          # 'GitHub repo owner'
-  admin:                          # 'GitHub repo'
-  repo:                           # ['GitHub repo owner and collaborators, only these guys can initialize github issues']
-  clientID:                       # 'GitHub Application Client ID'
-  clientSecret:                   # 'GitHub Application Client Secret'
+  owner: BattleBrothersGameCN
+  repo: BattleBrothersGameCN.github.io
+  client_id: 9e99a411a96cadfe11e2
+  client_secret: 9dd9547fd141604292427d556cc678469c7991b9
+  desc: 战场兄弟(BattleBrothers)汉化发布页
   perPage: 10                     # Pagination size, with maximum 100.
   pagerDirection: last            # Comment sorting direction, available values are last and first.
   createIssueManually: false      # By default, Gitalk will create a corresponding github issue for your every single page automatically when the logined user is belong to the admin users. You can create it manually by setting this option to true
@@ -144,14 +144,14 @@ gitalk:
 ## Gitment Settings
 ## Doc:https://github.com/imsun/gitment
 #
-gitment:
-  owner: BattleBrothersGameCN
-  repo: BattleBrothersGameCN.github.io
-  client_id: 9e99a411a96cadfe11e2
-  client_secret: 9dd9547fd141604292427d556cc678469c7991b9
-  desc: 战场兄弟(BattleBrothers)汉化发布页
-  perPage: 10                     # An optional number to which comments will be paginated. Default 20.
-  maxCommentHeight: 250           # An optional number to limit comments' max height, over which comments will be folded. Default 250.
+# gitment:
+#   owner: BattleBrothersGameCN
+#   repo: BattleBrothersGameCN.github.io
+#   client_id: 9e99a411a96cadfe11e2
+#   client_secret: 9dd9547fd141604292427d556cc678469c7991b9
+#   desc: 战场兄弟(BattleBrothers)汉化发布页
+#   perPage: 10                     # An optional number to which comments will be paginated. Default 20.
+#   maxCommentHeight: 250           # An optional number to limit comments' max height, over which comments will be folded. Default 250.
 
 ## Disqus settings
 ##
