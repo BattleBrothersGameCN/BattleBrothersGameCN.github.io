@@ -1,7 +1,7 @@
 ---
 title: 汉化发布
 catalog: true
-date: 2023-08-01 12:59:59
+date: 2023-12-07 10:00:00
 subtitle: 汉化补丁下载
 lang: cn
 header-img: /img/header_img/lml_bg.jpg
@@ -21,14 +21,16 @@ categories:
 
 # 下载链接
 ## 汉化器(bb-translator.exe)
-Github 下载地址: https://github.com/shabbywu/Battle-Brothers-CN/releases/download/v20230801/bb-translator.exe.zip
-分流地址: https://ghproxy.com/https://github.com/shabbywu/Battle-Brothers-CN/releases/download/v20230801/bb-translator.exe.zip
-
-## 字体(zdata_font.zip)
-Github 下载地址: https://github.com/shabbywu/Battle-Brothers-CN/releases/download/v20230801/zdata_font.zip
-分流地址: https://ghproxy.com/https://github.com/shabbywu/Battle-Brothers-CN/releases/download/v20230801/zdata_font.zip
+Github 下载地址: https://github.com/shabbywu/Battle-Brothers-CN/releases/download/v20231206/bb-translator.exe.zip
+分流地址: https://mirror.ghproxy.com/https://github.com/shabbywu/Battle-Brothers-CN/releases/download/v20231206/bb-translator.exe.zip
 
 # 更新说明
+## 2023-12-06 - v0.6.0
+- 重写启动器, 应该基本解决报错问题
+- Steam 版支持 4GB 补丁, 减缓游戏内存不足的压力(只要 Steam 客户端正常开启, 理论上不影响成就系统)
+- 不再内置启动器, 按需下载 (Steam 发行版不要用 GOG 启动器, 会由于缺失 GOG 的动态链接库而无法启动; 同理 GOG 发行版也不要用 Steam 启动器) 
+- 启动器内置字体, 无需额外下载
+
 ## 2023-08-01 - v0.5.0
 - 启动器增加对 1.5.0.15 的 Steam 客户端的支持
 - 新增离线特权, 支持离线使用(实验性功能, 如功能异常退出登录即可退出离线模式)
