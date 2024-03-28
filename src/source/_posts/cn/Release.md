@@ -56,6 +56,11 @@ Github 下载地址: https://github.com/shabbywu/Battle-Brothers-CN/releases/dow
 ![离线特权](离线特权.jpeg)
 > 开启离线特权后, 可在无网络环境下使用「启动器」功能启动游戏
 
+# 汉化人员
+
+> 程序: shabbywu
+> 翻译 & 校对: ChatGPT、shabbywu、Rayforward、FaelGnahz、DarkSjm、zzj680124、野蛮人神选者
+
 # 加入我们
 战场兄弟中文本地化在线协同项目地址: https://paratranz.cn/projects/7032
 如果你对词条翻译不满意或者有其他想法, 可以加入项目共同促进中文本地化的发展。

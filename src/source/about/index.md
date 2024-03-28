@@ -7,9 +7,8 @@ description: "Battle Brothers(战场兄弟)中文翻译项目"
 
 # 汉化人员
 
-> 翻译: ChatGPT、shabbywu、Rayforward、DarkSjm
-> 校对: shabbywu、Rayforward、DarkSjm、zzj680124
 > 程序: shabbywu
+> 翻译 & 校对: ChatGPT、shabbywu、Rayforward、FaelGnahz、DarkSjm、zzj680124、野蛮人神选者
 
 # 联系方式
 
