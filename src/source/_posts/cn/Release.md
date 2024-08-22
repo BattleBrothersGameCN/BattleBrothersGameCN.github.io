@@ -25,6 +25,10 @@ Github 下载地址: https://github.com/shabbywu/Battle-Brothers-CN/releases/dow
 分流地址: https://mirror.ghproxy.com/https://github.com/shabbywu/Battle-Brothers-CN/releases/download/v20231206/bb-translator.exe.zip
 
 # 更新说明
+## 2024-06-12 - v1.1.2
+- 翻译器完全重构, [项目地址](https://github.com/shabbywu/bb-translator), [N网发布地址](https://www.nexusmods.com/battlebrothers/mods/647)
+- 翻译器除更新文本以外, 不再依赖网络
+
 ## 2023-12-06 - v0.6.0
 - 重写启动器, 应该基本解决报错问题
 - Steam 版支持 4GB 补丁, 减缓游戏内存不足的压力(只要 Steam 客户端正常开启, 理论上不影响成就系统)
@@ -45,16 +49,10 @@ Github 下载地址: https://github.com/shabbywu/Battle-Brothers-CN/releases/dow
 4. 点击「执行翻译」自动生成翻译补丁
 ![执行翻译](执行翻译.jpeg)
 > 如需使用 Mod, 则把 Mod 正确安装到 data 目录后再点击「执行翻译」
-5. 下载字体 zdata_font.zip(无需解压) 至游戏的 `data` 目录
-![字体位置](字体位置.jpeg)
-6. 切换页面至「启动器」，点击「启动游戏」开始游玩
-![启动器](启动器.jpeg)
+6. 使用[启动器](https://www.nexusmods.com/battlebrothers/mods/719)运行游戏
 7. 定期更新翻译文本, 自动更新至最新的翻译进度
 ![更新翻译文本](更新翻译文本.jpeg)
 > 「更新翻译文本」后需要重新「执行翻译」才会生效
-8. (可选) 登录 Github 账号开启离线特权
-![离线特权](离线特权.jpeg)
-> 开启离线特权后, 可在无网络环境下使用「启动器」功能启动游戏
 
 # 汉化人员
 
