@@ -50,6 +50,7 @@ Github 下载地址: https://github.com/shabbywu/Battle-Brothers-CN/releases/dow
 ![执行翻译](执行翻译.jpeg)
 > 如需使用 Mod, 则把 Mod 正确安装到 data 目录后再点击「执行翻译」
 6. 使用[启动器](https://www.nexusmods.com/battlebrothers/mods/719)运行游戏
+> 推荐把启动器解压到游戏的 win32 目录, 因为游戏的 c++ 部分代码有些地方是根据运行文件的目录来判断的。
 7. 定期更新翻译文本, 自动更新至最新的翻译进度
 ![更新翻译文本](更新翻译文本.jpeg)
 > 「更新翻译文本」后需要重新「执行翻译」才会生效
